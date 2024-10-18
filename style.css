@@ -41,7 +41,7 @@ html,body{
 
 body{
   background-color: var(--lightOrange);
-  background-image: url(/Assets/chang-pattern-Trans.svg);
+  background-image: url(https://raw.githubusercontent.com/Kenito12/PortfolioTemplate/1725b701ab2844ce0a4e68e41a70954f81136308/Assets/chang-pattern-Trans.svg);
   background-size: 10%;  
   animation: pan 120s linear infinite;
 }
