@@ -1,50 +1,141 @@
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.inter-semiBold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+
+:root{
+  --lightOrange: #FFD9D0;
+  --DarkOrange: #3C1810;
+  --Orange: #E87961;
+  --Oranger: #D45A3F;
+  --Orangelight: #FF9179;
+
+}
+
 html,body{
     margin: 0;
 }
+
+body{
+  background-color: var(--lightOrange);
+  background-image: url(Assets/chang-pattern-trans.svg);
+  background-size: 10%;  
+  animation: pan 120s linear infinite;
+}
+
+header{
+  color: var(--Oranger);
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  >nav>ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+}
+#navSocial{
+  display: none;
+}
+#exitBut{
+  display: none;
+}
+
+/* Animation */
 @keyframes pan {
-    0% {
-      background-position: 0% 0%;
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+/* Animation End */
+
+
+/* Mobile Phone Media Query */
+@media (max-width: 480px){
+  html{
+    font-size: 13px;
+  }
+  body{
+    background-size: 30%;
+    animation: pan 60s linear infinite;
+  }
+
+  header{
+    /* Hide nav to create a hamburger */
+    >nav{
+      display: none;
     }
-    100% {
-      background-position: 100% 0%;
+    >nav>ul{
+      position: fixed;
+      flex-direction: column;
+      inset: 0;
+      background-color: var(--lightOrange);
+      color: var(--DarkOrange);
+      font-weight: 700 !important;
+      font-size: 2.8rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top:8rem;
     }
   }
-  
-  #app {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+  #navSocial{
+    margin-top: auto;
+    margin-bottom: 9rem;
+    display: block;
+    >h2{
+      font-size: 1.3rem;
+      color: hsl(11 57 15 / 40%)
+    }
+    >hr{
+      margin: 0 auto;
+      border: 0.5px solid hsl(11 57 15 / 40%);
+    }
+    >ul{
+      padding: 0;
+      list-style: none;
+      font-size: 1.3rem;
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
   }
-  
-  #chang-container {
-    background: radial-gradient(rgb(var(--light-gold-rgb)), rgb(var(--dark-gold-rgb)));
-    height: 100%;  
-    /* overflow: hidden; */
-    position: relative;
-  }
-  
-  #chang-pattern {
-    background-image: url(Assets/chang-patter.svg);
-    background-size: 10%;  
+  #exitBut{
+    display: block;
+    width: 1.7rem;
     position: absolute;
-    left: 50%;
-    top: 0px;
-    translate: -50% 0%;
-    height: 100%;
-    width: 100%;
-    min-width: 1200px;
-    opacity: 1;
-    animation: pan 100s linear infinite;
-    will-change: background-position;
+    top: 0;
+    right: 0;
+    margin-top: 2rem;
+    margin-right: 2rem;
   }
-  
-  #chang-gradient-overlay {
-    background: radial-gradient(circle, transparent 75%, rgb(var(--dark-gold-rgb)));
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-    z-index: 2;
-  }
+}
+/* Mobile Phone Media Query End*/
