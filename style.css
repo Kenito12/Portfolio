@@ -41,7 +41,7 @@ html,body{
 
 body{
   background-color: var(--lightOrange);
-  background-image: url(Assets/chang-pattern-trans.svg);
+  background-image: url(/Assets/chang-pattern-Trans.svg);
   background-size: 10%;  
   animation: pan 120s linear infinite;
 }
