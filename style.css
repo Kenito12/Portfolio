@@ -32,6 +32,7 @@
   --Orange: #E87961;
   --Oranger: #D45A3F;
   --Orangelight: #FF9179;
+  --OrangeGray: #EDB7AB;
 
 }
 
@@ -46,6 +47,7 @@ body{
   animation: pan 120s linear infinite;
 }
 
+/* Header*/
 header{
   color: var(--Oranger);
   font-size: 1rem;
@@ -69,6 +71,32 @@ header{
 #menuBut{
   display: none;
 }
+/* Header end */
+
+/* Footer */
+footer{
+  width: 100vw;
+  background-color: var(--Orange);
+  display: flex;
+  justify-content: space-between;
+  >div{
+    padding: 2rem 1.5rem;
+  }
+  >div>h2{
+    font-size: 1rem;
+    color: var(--OrangeGray);
+  }
+  >div>ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem ;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: var(--lightOrange);
+  }
+}
+/* Footer End*/
 
 /* Animation */
 @keyframes pan {

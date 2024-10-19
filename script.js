@@ -14,6 +14,7 @@ exitBut.onclick = () => {
     gsap.fromTo(".menuLink", {opacity:1, x: 0, stagger: 0.1},{opacity:0, x: "+=100",stagger: 0.1})
 }
 
+// on even of window resizing apply condition
 window.onresize = () => {
     let windowWidth = window.innerWidth
     if(windowWidth > 768){
