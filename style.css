@@ -80,7 +80,7 @@ footer{
   display: flex;
   justify-content: space-between;
   >div{
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 2rem;
   }
   >div>h2{
     font-size: 1rem;
@@ -120,6 +120,7 @@ footer{
     animation: pan 60s linear infinite;
   }
 
+  /* Mobile Header */
   header{
     /* Hide nav to create a hamburger */
     >nav{
@@ -171,5 +172,15 @@ footer{
   #menuBut{
     display: block;
   }
+  /* Mobile Header End*/
+
+  /* Mobile Footer */
+  footer{
+    flex-direction: column;
+    >div{
+      padding: 2rem 2rem;
+    }
+  }
+  /* Mobile Footer End*/
 }
 /* Mobile Phone Media Query End*/
