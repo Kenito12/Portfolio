@@ -82,14 +82,13 @@ body{
 }
 .projectCard{
   margin: 0;
-  max-width: 600px;
   width: inherit;
   >img{
     object-fit: contain;
     width: 100%;
   }
   >h2{
-    font-size: clamp(1rem, 5vw, 2rem);
+    font-size: clamp(1rem, 1vw, 2rem);
     color: var(--DarkOrange);
     margin-bottom: 0;
   }
