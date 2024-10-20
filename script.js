@@ -28,5 +28,3 @@ window.onresize = () => {
     }
 }
 
-// alert(window.innerWidth)
-

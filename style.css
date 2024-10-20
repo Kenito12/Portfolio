@@ -79,8 +79,13 @@ body{
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
+  >a:link, a:visited{
+    color: var(--DarkOrange);
+    text-decoration: none;
+  }
 }
 .projectCard{
+  cursor: pointer;
   margin: 0;
   width: inherit;
   >img{
@@ -101,6 +106,7 @@ body{
     justify-content: space-between;
   }
 }
+
 /* Project Display End*/
 
 /* Header*/
@@ -193,6 +199,7 @@ footer{
     margin: 2rem 0;
   }
 }
+/* home End*/
 
 /* About me */
 #aboutPageContent{
@@ -216,7 +223,7 @@ footer{
   }
   >p{
     color: var(--DarkOrange);
-    font-size: clamp(1rem,1vw,1.2rem);
+    font-size: clmap(1rem, 10vw, 1.2rem);
     line-height: 2.2rem;
   }
   >button{
@@ -224,7 +231,16 @@ footer{
   }
 }
 /* About me End*/
-/* home End*/
+
+/* Project */
+#projectTitle{
+  color: var(--Orange);
+    /* + 1rem for accessibility when zoom  */
+    font-size:clamp(2.2rem,10vw,4rem);
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+}
+/* Project End*/
 
 /* Animation */
 @keyframes pan {

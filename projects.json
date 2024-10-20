@@ -1,0 +1,19 @@
+
+[
+    {
+        "projectname" : "Quickcals",
+        "task": "Design & Development",
+        "year": 2024,
+        "thumbnail":"Assets/Thumbnail/QuickcalsThumbnail.png",
+        "overview":"",
+        "processwork":""
+    },
+    {
+        "projectname" : "Yak",
+        "task": "Design & Prototype",
+        "year": 2024,
+        "thumbnail":"Assets/Thumbnail/YakThumbnail.png",
+        "overview":"",
+        "processwork":""
+    }
+]
