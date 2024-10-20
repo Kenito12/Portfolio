@@ -47,6 +47,10 @@ body{
   animation: pan 120s linear infinite;
 }
 
+.current{
+  text-decoration: underline;
+}
+
 /* Header*/
 header{
   color: var(--Oranger);
@@ -60,6 +64,12 @@ header{
     display: flex;
     gap: 2rem;
     list-style: none;
+  }
+  >nav>ul>li{
+    >a:link, a:visited{
+      color: var(--Oranger);
+      text-decoration: none;
+    }
   }
 }
 #navSocial{
@@ -94,6 +104,12 @@ footer{
     padding: 0;
     font-size: 1rem;
     color: var(--lightOrange);
+  }
+  >div>ul>li{
+    >a:link, a:visited{
+      color: var(--lightOrange);
+      text-decoration: none;
+    }
   }
 }
 /* Footer End*/
@@ -138,6 +154,11 @@ footer{
       padding-right: 1.5rem;
       padding-top:8rem;
     }
+    >nav>ul>li{
+      >a:link, a:visited{
+        color: var(--DarkOrange);
+      }
+    }
   }
   #navSocial{
     margin-top: auto;
@@ -158,6 +179,12 @@ footer{
       display: flex;
       gap: 2rem;
       margin-top: 1rem;
+    }
+    >ul>li{
+      >a:link, a:visited{
+        color: var(--DarkOrange);
+        text-decoration: none;
+      }
     }
   }
   #exitBut{
