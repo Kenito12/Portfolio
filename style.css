@@ -193,6 +193,37 @@ footer{
     margin: 2rem 0;
   }
 }
+
+/* About me */
+#aboutPageContent{
+  max-width: 515px;
+  padding: 0 2rem;
+  
+  >div{
+    font-size: clamp(1rem, 5vw, 1.5rem);
+  }
+  >h2{
+    color: var(--Orange);
+    /* + 1rem for accessibility when zoom  */
+    font-size:clamp(2.2rem,10vw,4rem);
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  >h6{
+    color: var(--DarkOrange);
+    font-size: clamp(1rem,5vw,1rem);
+    margin-top: 0;
+  }
+  >p{
+    color: var(--DarkOrange);
+    font-size: clamp(1rem,1vw,1.2rem);
+    line-height: 2.2rem;
+  }
+  >button{
+    margin: 2rem 0;
+  }
+}
+/* About me End*/
 /* home End*/
 
 /* Animation */
