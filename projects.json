@@ -5,15 +5,17 @@
         "task": "Design & Development",
         "year": 2024,
         "thumbnail":"Assets/Thumbnail/QuickcalsThumbnail.png",
-        "overview":"",
-        "processwork":""
+        "overview":"In this project, I utilized the dynamic data to the nutrition facts search features which introduce flexibility, relevant and up-to-date data to user through the user of Edamam’s Nutrition Analysis API along with DOM manipulation. In addition to personalized the user experiences, feature for the user to be able to add user own calories goal to the website is also added to create even more personalized experience for the user.",
+        "processwork":"https://drive.google.com/file/d/1hOK3HIYkhEWtTMcz2Ff96BsHGE8V9y8L/view?usp=sharing",
+        "site":"https://kenito12.github.io/Quickcals/"
     },
     {
         "projectname" : "Yak",
         "task": "Design & Prototype",
         "year": 2024,
         "thumbnail":"Assets/Thumbnail/YakThumbnail.png",
-        "overview":"",
-        "processwork":""
+        "overview":"Yak” is a project that aims to improve users’ quality of life and also keep users company in the form of an artificial companion. “Yak” or ยักษ์ is a Thai giant with a similar design to giants in Ramayana literature. These giants are often seen in front of many well-known temples in Thailand such as Wat Jaeng and Wat Pho. They served as a protector that help guard the temple and protect temple’s visitors from bad omen. This is why yak is chosen as a concept for the design. It’s a perfect fit and helps emphasize the goal of improving and helping users with daily life tasks. With the help of WGSN’s trend forecasting and analytics along with software prototyping utilities from Protopie, I’m able to create a highly functional prototype for this project which helps serve as a proof of concept for further development of the project.",
+        "processwork":"https://drive.google.com/file/d/1sPc4K1A0pEsx7UM1K0j9hG_aIzlBoVKJ/view?usp=sharing",
+        "site":"https://youtu.be/E_U3y2nmNSI"
     }
 ]

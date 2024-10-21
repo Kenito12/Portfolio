@@ -21,7 +21,7 @@ fetch('projects.json')
         `
         <a href="ProjectDis.html?project=${project.projectname}">
         <div class="projectCard">
-        <img src="${project.thumbnail}" alt="${project.projectname}">
+        <img src="${project.thumbnail? project.thumbnail : 'Assets/projectPlaceholder.png'}" alt="${project.projectname}">
         <h2 class="inter-bold">${project.projectname}</h2>
         <hr>
         <div class="inter-medium">

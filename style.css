@@ -242,6 +242,44 @@ footer{
 }
 /* Project End*/
 
+/* Project Display */
+#projectDisplay{
+  margin: 0 auto;
+  max-width: 60%;
+  >img{
+    object-fit: contain;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  >h1{
+    color: var(--Orange);
+    /* + 1rem for accessibility when zoom  */
+    font-size:clamp(2.2rem,10vw,4rem);
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  >p{
+    margin: 0;
+    max-width: 60rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--DarkOrange);
+  }
+}
+.subtext{
+  display: flex;
+  gap: 2rem;
+  color: var(--DarkOrange);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.buttonWrapper{
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+}
+/* Project Display End*/
+
 /* Animation */
 @keyframes pan {
   0% {
@@ -341,6 +379,15 @@ footer{
 
   .projectWrapper{
     grid-template-columns: auto;
+  }
+
+
+  .buttonWrapper{
+    flex-direction: column;
+  }
+
+  #projectDisplay{
+    max-width: 90%;
   }
 }
 /* Mobile Phone Media Query End*/
